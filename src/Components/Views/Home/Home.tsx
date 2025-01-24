@@ -10,13 +10,18 @@ interface HomeProps {
   setView: (view: Views) => void;
 }
 
-const Home: React.FC<HomeProps> = ({setView}) => {
+const Home: React.FC<HomeProps> = ({ setView }) => {
   return (
     <Box className="home-container">
       <Typography variant="h3" component="div">
         {appName}
       </Typography>
-      <Button variant="contained" color="primary" size={"large"} onClick={() => setView("Home")}>
+      <Button
+        variant="contained"
+        color="primary"
+        size={'large'}
+        onClick={() => setView('#TODO')}
+      >
         Duel! (2 players)
       </Button>
     </Box>
