@@ -4,7 +4,7 @@ import './index.css';
 import App from './App.tsx';
 
 createRoot(document.getElementById('bodys')!).render(
-    <StrictMode>
-        <App />
-    </StrictMode>,
+  <StrictMode>
+    <App />
+  </StrictMode>,
 );
