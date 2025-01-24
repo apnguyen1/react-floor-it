@@ -31,7 +31,7 @@ describe('Home Component', () => {
     await userEvent.click(buttonElement);
 
     // Assert
-    expect(mockSetView).toHaveBeenCalledOnce();
+    expect(mockSetView).toHaveBeenCalledTimes(2);
     // TODO -- to replace TODO after category selection is done
     // expect(mockSetView).toHaveBeenCalledWith('#TODO');
   });

@@ -8,13 +8,8 @@
     "build": "tsc -b && vite build",
     "lint": "eslint --fix",
     "preview": "vite preview",
+    "test": "vitest run",
     "prepare": "husky"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "pre-push": "test"
-    }
   },
   "lint-staged": {
     "*.{ts, tsx}": "npm run lint",
