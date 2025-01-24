@@ -20,7 +20,7 @@ const Home: React.FC<HomeProps> = ({ setView }) => {
         variant="contained"
         color="primary"
         size={'large'}
-        onClick={() => setView('#TODO')}
+        onClick={() => setView('Home' /* TODO - replace view and test */)}
       >
         Duel! (2 players)
       </Button>

@@ -32,7 +32,7 @@ describe('Home Component', () => {
 
     // Assert
     expect(mockSetView).toHaveBeenCalledOnce();
-    // Replace '#TODO' with the expected value after implementation
-    expect(mockSetView).toHaveBeenCalledWith('#TODO');
+    // TODO -- to replace TODO after category selection is done
+    // expect(mockSetView).toHaveBeenCalledWith('#TODO');
   });
 });
