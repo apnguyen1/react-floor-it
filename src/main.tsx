@@ -1,10 +1,9 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.tsx'
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import FloorIt from './FloorIt.tsx';
 
 createRoot(document.getElementById('bodys')!).render(
   <StrictMode>
-    <App />
+    <FloorIt />
   </StrictMode>,
 )
