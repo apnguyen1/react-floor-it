@@ -3,9 +3,10 @@ import userEvent from '@testing-library/user-event';
 import { beforeEach, describe, expect, Mock, test, vi } from 'vitest';
 import Home from './Home';
 import { appName } from '../../../utils/constants.ts';
+import { Views } from '../views.ts';
 
 describe('Home Component', () => {
-  let mockSetView: Mock<(...args: never[]) => never>;
+  let mockSetView: Mock<(view: Views) => void>;
 
   beforeEach(() => {
     mockSetView = vi.fn();
