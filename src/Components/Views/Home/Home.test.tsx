@@ -5,7 +5,7 @@ import Home from './Home';
 import { appName } from '../../../utils/constants.ts';
 
 describe('Home Component', () => {
-  let mockSetView: Mock<(...args: any[]) => any>;
+  let mockSetView: Mock<(...args: never[]) => never>;
 
   beforeEach(() => {
     mockSetView = vi.fn();
@@ -31,7 +31,7 @@ describe('Home Component', () => {
     await userEvent.click(buttonElement);
 
     // Assert
-    expect(mockSetView).toHaveBeenCalledOnce;
+    expect(mockSetView).toHaveBeenCalledOnce();
     // TODO -- to replace TODO after category selection is done
     // expect(mockSetView).toHaveBeenCalledWith('#TODO');
   });
