@@ -1,10 +1,11 @@
 import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 import { beforeEach, describe, expect, Mock, test, vi } from 'vitest';
 import Home from './Home';
 import { appName } from '../../../utils/constants.ts';
 
 describe('Home Component', () => {
-  let mockSetView: Mock<(...args: never[]) => never>;
+  let mockSetView: Mock<(...args: any[]) => any>;
 
   beforeEach(() => {
     mockSetView = vi.fn();
@@ -21,5 +22,17 @@ describe('Home Component', () => {
     // Check if the button is rendered
     const buttonElement = screen.getByRole('button', { name: /Duel! \(2 players\)/i });
     expect(buttonElement).toBeInTheDocument();
+  });
+
+  test('setView on click', async () => {
+    const buttonElement = screen.getByRole('button', { name: /Duel! \(2 players\)/i });
+
+    // Act
+    await userEvent.click(buttonElement);
+
+    // Assert
+    expect(mockSetView).toHaveBeenCalledOnce;
+    // TODO -- to replace TODO after category selection is done
+    // expect(mockSetView).toHaveBeenCalledWith('#TODO');
   });
 });
