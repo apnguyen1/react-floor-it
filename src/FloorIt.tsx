@@ -2,7 +2,7 @@ import React from 'react';
 import { useGame } from './hooks/useGame.ts';
 import { GameProvider } from './context/GameContext.tsx';
 import { HomeScreen } from './screens/Home/HomeScreen.tsx';
-import { ScreenType } from './screens/constants/screens.ts';
+import { ScreenType } from './constants/screens.ts';
 import './styles/FloorIt.css';
 import { AvatarScreen } from './screens/Avatars/AvatarScreen.tsx';
 import { CategoriesScreen } from './screens/Categories/CategoriesScreen.tsx';
