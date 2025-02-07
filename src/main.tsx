@@ -6,4 +6,4 @@ createRoot(document.getElementById('bodys')!).render(
   <StrictMode>
     <FloorIt />
   </StrictMode>,
-)
+);
